@@ -7,3 +7,16 @@ module signExtend(
 assign outInm ={{16{inInm[15]}}, inInm};
 
 endmodule 
+
+
+module signtb();
+	
+	wire[31:0] res;
+
+	signExtend sign(
+		.inInm(16'b100000),
+		.outInm(res)
+	);
+
+
+endmodule

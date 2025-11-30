@@ -13,7 +13,7 @@ output reg[31:0] readData2  //Dato que sale e la direccion 2
 );
 
 
-reg[31:0] Bank[0:31];
+reg[31:0] Bank[0:255];
 
 initial begin
 $readmemb("data.txt", Bank);
