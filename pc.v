@@ -1,21 +1,17 @@
+`timescale 1ns/1ns
+
 module pc(
-	input clk;,
-	input reset,
-	input [31:0]pcNext, //este dato viene del mux
-	output reg [31:0] pc //este va a la memoria y al sumador
-	);
+        input clk,
+        input reg [31:0] counterIn,
+        output reg [31:0] counterOut
+    );
 
+    initial begin 
+        counterOut = 32'b0;
+    end
 
-always @(posedge clk) begin
-	if(reset)
-		pc <=32'b0;
-	else begin
-		pc<=pcNext;
-	end
+    always @(clk) begin
+        counterOut = counterIn + 4;
+    end
 
-	
-end
-
-
-
-endmodule 
+endmodule
