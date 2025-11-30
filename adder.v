@@ -1,4 +1,4 @@
-module adder(
+module PCadder(
 	input [32:0]pcIn,
 	output [32:0]pcOut);
 	
