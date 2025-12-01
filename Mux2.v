@@ -1,10 +1,8 @@
 module Mux2(
-	input[4:0] in_20_16,
-	input[4:0] in_15_11,
-	input unidadControl,
-	output reg[4:0] salida);
-
-	assign salida = (unidadControl)?in_15_11:in_20_16;
-
-
+    input [4:0] rt_addr,  
+    input [4:0] rd_addr,  
+    input regDst,          
+    output [4:0] writeReg  
+);
+    assign writeReg = (regDst) ? rd_addr : rt_addr;
 endmodule

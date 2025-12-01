@@ -1,16 +1,15 @@
-`timescale 1ns/1ns
 module Control(
-        input[5:0] opCode,
-        output reg regDst,
-        output reg branch,
-        output reg memRead,
-        output reg memtoReg,
-        output reg[1:0] aluOp,
-        output reg memWrite,
-        output reg aluSrc,
-        output reg regWrite
-    );
-
+    input [5:0] opCode,      
+    output reg regDst,
+    output reg branch,
+    output reg memRead,
+    output reg memtoReg,
+    output reg [1:0] aluOp,  
+    output reg memWrite,
+    output reg aluSrc,
+    output reg regWrite
+);
+    
 
     always @* begin
             //iniciamos todo en
@@ -53,7 +52,7 @@ module Control(
                 end
 
             endcase
-            
+
         end
 
 

@@ -1,10 +1,12 @@
 module RAM(
+    input clk,              
     input memRead,
     input memWrite,
     input [31:0] addrIn,
     input [31:0] dataIn,
-    output reg [31:0] dataOut
+    output reg[31:0] dataOut
 );
+    
 
     reg[31:0] memory [0:255];
 

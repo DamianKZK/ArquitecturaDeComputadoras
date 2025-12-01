@@ -1,9 +1,6 @@
-module ShiftLeft2(
-    input [31:0] in,
-    output [31:0] out
+module shiftLeft2(
+    input [31:0] inData,   
+    output [31:0] outData 
 );
-
-    
-    assign out = in << 2;
-
+    assign outData = inData << 2;
 endmodule
