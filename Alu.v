@@ -1,4 +1,5 @@
 `timescale 1ns/1ns
+
 module ALUZeroFlag(
     input [31:0] a, b,
     input [2:0] sel,

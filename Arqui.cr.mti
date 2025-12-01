@@ -1,0 +1,237 @@
+/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux2.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux2
+
+Top level modules:
+	Mux2
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/ShiftLeft2.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/ShiftLeft2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shiftLeft2
+
+Top level modules:
+	shiftLeft2
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux1.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux1
+
+Top level modules:
+	Mux1
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Quesadilla.v {2 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Quesadilla.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module programCounter
+-- Compiling module Control
+-- Compiling module ALU
+-- Compiling module ALUZeroFlag
+-- Compiling module RAM
+** Warning: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Quesadilla.v(88): (vlog-2182) 'memory' might be read before written in always_comb or always @* block.
+-- Compiling module signExtend
+-- Compiling module registerBank
+** Warning: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Quesadilla.v(129): (vlog-2182) 'Bank' might be read before written in always_comb or always @* block.
+-- Compiling module adder
+-- Compiling module memInstr
+-- Compiling module quesadilla
+-- Compiling module QuesadillaTB
+
+Top level modules:
+	Control
+	ALU
+	ALUZeroFlag
+	RAM
+	signExtend
+	registerBank
+	QuesadillaTB
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux3.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux3
+
+Top level modules:
+	Mux3
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux2.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux2
+
+Top level modules:
+	Mux2
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/UnidadControl.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/UnidadControl.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Control
+
+Top level modules:
+	Control
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux4.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux4
+
+Top level modules:
+	Mux4
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux3.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux3
+
+Top level modules:
+	Mux3
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataPath
+-- Compiling module test
+-- Compiling module Testbench
+
+Top level modules:
+	test
+	Testbench
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux5.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux5
+
+Top level modules:
+	Mux5
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux4.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux4
+
+Top level modules:
+	Mux4
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/adder.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PCadder
+
+Top level modules:
+	PCadder
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux5.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux5
+
+Top level modules:
+	Mux5
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/ShiftLeft.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/ShiftLeft.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shiftLeft2
+
+Top level modules:
+	shiftLeft2
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v {2 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module registerBank
+** Warning: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v(20): (vlog-2182) 'Bank' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	registerBank
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/_and.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/_and.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module _and
+
+Top level modules:
+	_and
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/InstructionMemory.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/InstructionMemory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstructionMemory
+
+Top level modules:
+	InstructionMemory
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/_and.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/_and.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module _and
+
+Top level modules:
+	_and
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/MemoriaDatos.v {2 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/MemoriaDatos.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RAM
+** Warning: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/MemoriaDatos.v(18): (vlog-2182) 'memory' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	RAM
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/MemoriaDatos.v {2 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/MemoriaDatos.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RAM
+** Warning: /home/anglonchas/Programming/ArquitecturaDeComputadoras/MemoriaDatos.v(18): (vlog-2182) 'memory' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	RAM
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Burrito.v {2 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Burrito.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module registerBank
+** Warning: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Burrito.v(26): (vlog-2182) 'Bank' might be read before written in always_comb or always @* block.
+-- Compiling module ALU
+-- Compiling module burrito
+-- Compiling module burritoTB
+
+Top level modules:
+	burritoTB
+
+} {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/Burrito.v {2 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/Burrito.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module registerBank
+** Warning: /home/anglonchas/Programming/ArquitecturaDeComputadoras/Burrito.v(26): (vlog-2182) 'Bank' might be read before written in always_comb or always @* block.
+-- Compiling module ALU
+-- Compiling module burrito
+-- Compiling module burritoTB
+
+Top level modules:
+	burritoTB
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/signExtend.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/signExtend.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module signExtend
+-- Compiling module signtb
+
+Top level modules:
+	signtb
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Alu.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALUZeroFlag
+
+Top level modules:
+	ALUZeroFlag
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/AluControl.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/AluControl.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module AluControl
+
+Top level modules:
+	AluControl
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux1.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux1
+
+Top level modules:
+	Mux1
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/pc.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/pc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/ShiftLeft2.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/ShiftLeft2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shiftLeft2
+
+Top level modules:
+	shiftLeft2
+
+} {} {}}

@@ -1,0 +1,401 @@
+# Loading project Arqui
+# Compile of Mux1.v was successful.
+# Compile of _and.v was successful.
+# Compile of adder.v was successful.
+# Compile of Alu.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of Burrito.v was successful with warnings.
+# Compile of DataPath.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of MemoriaDatos.v was successful with warnings.
+# Compile of Mux2.v was successful.
+# Compile of Mux3.v was successful.
+# Compile of Mux4.v was successful.
+# Compile of Mux5.v was successful.
+# Compile of pc.v was successful.
+# Compile of Quesadilla.v was successful with warnings.
+# Compile of RegisterBank.v was successful with warnings.
+# Compile of ShiftLeft.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of signExtend.v was successful.
+# Compile of UnidadControl.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim work.registerBank
+# vsim work.registerBank 
+# Start time: 22:12:56 on Nov 30,2025
+# Loading work.registerBank
+run
+force -freeze sim:/registerBank/readReg1 25 0
+# Invalid binary digit: 2.
+# ** UI-Msg: (vsim-4011) Invalid force value: 25 0.
+# 
+run
+run
+force -freeze sim:/registerBank/readReg1 11000 0
+run
+run
+force -freeze sim:/registerBank/readReg2 01001 0
+run
+force -freeze sim:/registerBank/writeReg 01000 0
+run
+force -freeze sim:/registerBank/writeData 001001010101001111001 0
+run
+force -freeze sim:/registerBank/regWrite 1 0
+run
+run
+# Compile of Mux1.v was successful.
+# Compile of _and.v was successful.
+# Compile of adder.v was successful.
+# Compile of Alu.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of Burrito.v was successful with warnings.
+# Compile of DataPath.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of MemoriaDatos.v was successful with warnings.
+# Compile of Mux2.v was successful.
+# Compile of Mux3.v was successful.
+# Compile of Mux4.v was successful.
+# Compile of Mux5.v was successful.
+# Compile of pc.v was successful.
+# Compile of Quesadilla.v was successful with warnings.
+# Compile of RegisterBank.v was successful with warnings.
+# Compile of ShiftLeft.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of signExtend.v was successful.
+# Compile of UnidadControl.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim work.shiftLeft2
+# End time: 22:19:58 on Nov 30,2025, Elapsed time: 0:07:02
+# Errors: 0, Warnings: 5
+# vsim work.shiftLeft2 
+# Start time: 22:19:58 on Nov 30,2025
+# Loading work.shiftLeft2
+force -freeze sim:/shiftLeft2/inData 100000 0
+run
+vsim work.InstructionMemory
+# End time: 22:23:40 on Nov 30,2025, Elapsed time: 0:03:42
+# Errors: 0, Warnings: 2
+# vsim work.InstructionMemory 
+# Start time: 22:23:40 on Nov 30,2025
+# Loading work.InstructionMemory
+run
+# ** Warning: (vsim-7) Failed to open readmem file "memoria.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/InstructionMemory.v(11)
+#    Time: 0 ps  Iteration: 0  Instance: /InstructionMemory
+run
+# Compile of InstructionMemory.v was successful.
+vsim work.InstructionMemory
+# End time: 22:26:52 on Nov 30,2025, Elapsed time: 0:03:12
+# Errors: 0, Warnings: 3
+# vsim work.InstructionMemory 
+# Start time: 22:26:52 on Nov 30,2025
+# Loading work.InstructionMemory
+run
+# ** Warning: (vsim-7) Failed to open readmem file "program.vbin" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/InstructionMemory.v(11)
+#    Time: 0 ps  Iteration: 0  Instance: /InstructionMemory
+# Compile of InstructionMemory.v was successful.
+vsim work.InstructionMemory
+# End time: 22:27:44 on Nov 30,2025, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 3
+# vsim work.InstructionMemory 
+# Start time: 22:27:44 on Nov 30,2025
+# Loading work.InstructionMemory
+run
+force -freeze sim:/InstructionMemory/address 0 0
+run
+vsim work.DataPath
+# End time: 22:32:20 on Nov 30,2025, Elapsed time: 0:04:36
+# Errors: 0, Warnings: 1
+# vsim work.DataPath 
+# Start time: 22:32:20 on Nov 30,2025
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /DataPath/U_RAM File: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v Line: 161
+# Error loading design
+# End time: 22:32:21 on Nov 30,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of DataPath.v was successful.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 22:37:26 on Nov 30,2025
+# Loading work.testbench
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'DataPath'.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v Line: 191
+# Error loading design
+# End time: 22:37:26 on Nov 30,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of DataPath.v was successful.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 22:37:47 on Nov 30,2025
+# Loading work.testbench
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUV/U_RAM File: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v Line: 161
+# Error loading design
+# End time: 22:37:48 on Nov 30,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of DataPath.v was successful.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 22:43:36 on Nov 30,2025
+# Loading work.testbench
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUV/U_RAM File: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v Line: 161
+# Error loading design
+# End time: 22:43:36 on Nov 30,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vsim work.DataPath
+# vsim work.DataPath 
+# Start time: 22:43:43 on Nov 30,2025
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /DataPath/U_RAM File: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v Line: 161
+# Error loading design
+# End time: 22:43:43 on Nov 30,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim work.DataPath
+# vsim work.DataPath 
+# Start time: 22:46:10 on Nov 30,2025
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /DataPath/U_RAM File: /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v Line: 161
+# Error loading design
+# End time: 22:46:10 on Nov 30,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of DataPath.v was successful.
+# Compile of DataPath.v was successful.
+vsim work.DataPath
+# vsim work.DataPath 
+# Start time: 22:46:22 on Nov 30,2025
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+run
+run
+run
+run
+force -freeze sim:/DataPath/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/DataPath/reset 1 0, 0 {50 ns} -r 100
+# Compile of Mux1.v was successful.
+# Compile of _and.v was successful.
+# Compile of adder.v was successful.
+# Compile of Alu.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of Burrito.v was successful with warnings.
+# Compile of DataPath.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of MemoriaDatos.v was successful with warnings.
+# Compile of Mux2.v was successful.
+# Compile of Mux3.v was successful.
+# Compile of Mux4.v was successful.
+# Compile of Mux5.v was successful.
+# Compile of pc.v was successful.
+# Compile of Quesadilla.v was successful with warnings.
+# Compile of RegisterBank.v was successful with warnings.
+# Compile of ShiftLeft.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of signExtend.v was successful.
+# Compile of UnidadControl.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim work.DataPath
+# End time: 22:49:08 on Nov 30,2025, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 4
+# vsim work.DataPath 
+# Start time: 22:49:08 on Nov 30,2025
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+force -freeze sim:/DataPath/clk 1 0, 0 {50 ns} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.DataPath
+# End time: 22:49:57 on Nov 30,2025, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 1
+# vsim work.DataPath 
+# Start time: 22:49:57 on Nov 30,2025
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+force -freeze sim:/DataPath/clk 1 0, 0 {50 ns} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Mux1.v was successful.
+# Compile of _and.v was successful.
+# Compile of adder.v was successful.
+# Compile of Alu.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of Burrito.v was successful with warnings.
+# Compile of DataPath.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of MemoriaDatos.v was successful with warnings.
+# Compile of Mux2.v was successful.
+# Compile of Mux3.v was successful.
+# Compile of Mux4.v was successful.
+# Compile of Mux5.v was successful.
+# Compile of pc.v was successful.
+# Compile of Quesadilla.v was successful with warnings.
+# Compile of RegisterBank.v was successful with warnings.
+# Compile of ShiftLeft.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of signExtend.v was successful.
+# Compile of UnidadControl.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim work.Testbench
+# End time: 22:52:59 on Nov 30,2025, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 2
+# vsim work.Testbench 
+# Start time: 22:52:59 on Nov 30,2025
+# Loading work.Testbench
+# Loading work.DataPath
+# Loading work.pc
+# Loading work.PCadder
+# Loading work.InstructionMemory
+# Loading work.Control
+# Loading work.Mux2
+# Loading work.registerBank
+# Loading work.signExtend
+# Loading work.Mux3
+# Loading work.AluControl
+# Loading work.ALUZeroFlag
+# Loading work.shiftLeft2
+# Loading work.Mux4
+# Loading work.RAM
+# Loading work.Mux1
+force -freeze sim:/Testbench/clk 1 0, 0 {50 ns} -r 100
+run
+# === INICIO DE SIMULACION MIPS SINGLE-CYCLE ===
+# Time:   0 ns | PC:          0 | Instr: 00620820 | ALU Res:       3412 | WriteReg:  1 | WriteData:       3412 | MemWrite: 0
+# Time: 50 -> Reset desactivado. Procesador arrancando...
+run
+# Time: 100 ns | PC:          4 | Instr: 00611022 | ALU Res: 4294965590 | WriteReg:  2 | WriteData: 4294965590 | MemWrite: 0
+# Time: 150 ns | PC:          8 | Instr: 20410003 | ALU Res:       1706 | WriteReg:  1 | WriteData:       1706 | MemWrite: 0
+run
+# Time: 200 ns | PC:         12 | Instr: 10630002 | ALU Res:          0 | WriteReg:  3 | WriteData:          0 | MemWrite: 0
+# === FIN DE SIMULACION ===
+# ** Note: $finish    : /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v(227)
+#    Time: 250 ns  Iteration: 0  Instance: /Testbench
+# 1
+# Break in Module Testbench at /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v line 227

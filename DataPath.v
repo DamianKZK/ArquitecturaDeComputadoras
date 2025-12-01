@@ -46,7 +46,11 @@ module DataPath(
     wire        w_zeroFlag;
 
     // --- Cables de Memoria ---
+<<<<<<< HEAD
     wire [31:0] w_memDataOut;     
+=======
+    wire [31:0] w_memDataOut;     // Salida de la RA
+>>>>>>> 1b92a02 (efys)
 
     // --- Cables de Branch ---
     wire [31:0] w_shiftedImm;     
@@ -85,7 +89,11 @@ module DataPath(
     pc U_PC (
         .clk(clk),
         .reset(reset),
+<<<<<<< HEAD
         .pcNext(w_pc_final),             // <--- Conectado a la salida del Mux5
+=======
+        .pcNext(w_pc_next),     
+>>>>>>> 1b92a02 (efys)
         .pc(w_pc_actual)
     );
 
@@ -100,7 +108,7 @@ module DataPath(
     );
 
 
-    // --- ETAPA 2: DECODE & CONTROL ---
+   
 
     Control U_Control (
         .opCode(opcode),
@@ -183,7 +191,6 @@ module DataPath(
     // --- ETAPA 4: MEMORY ---
 
     RAM U_RAM (
-        .clk(clk),
         .memRead(w_memRead),
         .memWrite(w_memWrite),
         .addrIn(w_aluResult),
@@ -201,5 +208,78 @@ module DataPath(
         .memToReg(w_memtoReg),           // CORREGIDO: Usamos .memToReg en vez de .sel
         .writeData(w_write_data)
     );
+
+endmodule
+
+
+module test;
+    
+    DataPath MIPS32 (
+        .clk(clk),
+        .reset(reset)
+    );
+
+endmodule
+
+module Testbench;
+
+    // 1. Señales de entrada para el procesador
+    reg clk;
+    reg reset;
+
+    // 2. Instancia del Unit Under Test (UUT) -> Tu DataPath
+    DataPath UUT (
+        .clk(clk),
+        .reset(reset)
+    );
+
+    // 3. Generación del Reloj (Clock)
+    // El reloj cambia cada 10ns, creando un periodo de 20ns (50 MHz)
+    initial begin
+        clk = 0;
+        forever #10 clk = ~clk;
+    end
+
+    // 4. Secuencia de Prueba
+    initial begin
+        // Configuración para guardar ondas (opcional, para GTKWave o similares)
+        $dumpfile("mips_simulation.vcd");
+        $dumpvars(0, Testbench);
+
+        $display("=== INICIO DE SIMULACION MIPS SINGLE-CYCLE ===");
+
+        // Paso A: Reset inicial
+        // Mantenemos el reset activo un momento para que el PC empiece en 0
+        reset = 1; 
+        #50;       
+        
+        // Paso B: Soltamos el reset
+        reset = 0;
+        $display("Time: %0t -> Reset desactivado. Procesador arrancando...", $time);
+
+        // Paso C: Ejecución
+        // Esperamos suficiente tiempo para que se ejecuten las instrucciones de memoria.txt
+        // Cada instrucción toma 1 ciclo (20ns).
+        #200; 
+
+        // Paso D: Finalizar
+        $display("=== FIN DE SIMULACION ===");
+        $finish;
+    end
+
+    // 5. Monitor de Señales (La "Consola")
+    // Esto imprimirá en texto lo que está pasando dentro del procesador en cada ciclo.
+    // Accedemos a los cables internos usando "UUT.nombre_del_cable"
+    initial begin
+        $monitor("Time: %3d ns | PC: %d | Instr: %h | ALU Res: %d | WriteReg: %d | WriteData: %d | MemWrite: %b", 
+                 $time, 
+                 UUT.w_pc_actual,      // Ver en qué dirección vamos
+                 UUT.w_instruction,    // Ver qué instrucción se ejecuta (Hex)
+                 UUT.w_aluResult,      // Ver el resultado de la operación
+                 UUT.w_write_reg_addr, // Ver en qué registro se guarda
+                 UUT.w_write_data,     // Ver qué dato se guarda
+                 UUT.w_memWrite        // Ver si estamos escribiendo en RAM
+                 );
+    end
 
 endmodule

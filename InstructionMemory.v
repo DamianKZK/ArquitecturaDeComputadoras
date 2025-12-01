@@ -8,8 +8,9 @@ module InstructionMemory(
 
 
 	initial begin
-        $readmemb("memoria.txt", memory); //Falta el archivo
+        $readmemb("a.vbin", memory); //Falta el archivo
     end
+
 	assign instruction = memory[address[31:2]];
 
 endmodule

@@ -8,11 +8,17 @@ module pc(
 	);
 
     initial begin 
-        counterOut = 32'b0;
+        pc = 32'b0;
     end
 
     always @(clk) begin
-        counterOut = counterIn + 4;
+    if(reset)
+        pc <= 32'b0;
+    else begin
+        pc <= pcNext;
     end
+
+    
+end
 
 endmodule
