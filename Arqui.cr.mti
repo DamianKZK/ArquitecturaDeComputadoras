@@ -5,6 +5,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Mux2
 
+<<<<<<< HEAD
 } {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/ShiftLeft2.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/ShiftLeft2.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module shiftLeft2
@@ -44,6 +45,8 @@ Top level modules:
 	registerBank
 	QuesadillaTB
 
+=======
+>>>>>>> 06b36a9 (duhfa)
 } {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux3.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux3.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Mux3
@@ -110,6 +113,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	PCadder
 
+<<<<<<< HEAD
 } {} {}} /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux5.v {1 {vlog -work work -stats=none /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux5.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Mux5
@@ -124,6 +128,8 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	shiftLeft2
 
+=======
+>>>>>>> 06b36a9 (duhfa)
 } {} {}} /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v {2 {vlog -work work -stats=none /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module registerBank
