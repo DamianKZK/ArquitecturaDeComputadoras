@@ -5,13 +5,19 @@ module DataPath(
     input reset
 );
 
-   
+    // ==========================================
+    // 1. CABLES (WIRES) E INTERCONEXIONES
+    // ==========================================
 
     // --- Cables del PC y Fetch ---
     wire [31:0] w_pc_actual;
-    wire [31:0] w_pc_next;       // Salida del Mux4 (Branch)
-    wire [31:0] w_pc_plus_4;     // Salida del PCadder
+    wire [31:0] w_pc_next_branch; // Salida del Mux4 (Branch vs PC+4)
+    wire [31:0] w_pc_final;       // Salida del Mux5 (Jump vs Branch) -> Entrada al PC
+    wire [31:0] w_pc_plus_4;      // Salida del PCadder
     wire [31:0] w_instruction;
+    
+    // --- Cable para dirección de Jump ---
+    wire [31:0] w_jumpAddress;    
 
     // --- Cables de Decodificación (Slicing) ---
     wire [5:0]  opcode = w_instruction[31:26];
@@ -20,17 +26,18 @@ module DataPath(
     wire [4:0]  rd     = w_instruction[15:11];
     wire [15:0] imm    = w_instruction[15:0];
     wire [5:0]  funct  = w_instruction[5:0];
+    wire [25:0] target = w_instruction[25:0]; // Target Address para Jump
 
     // --- Cables de la Unidad de Control ---
-    wire w_regDst, w_branch, w_memRead, w_memtoReg, w_memWrite, w_aluSrc, w_regWrite;
-    wire [1:0] w_aluOp;
+    wire w_regDst, w_branch, w_memRead, w_memtoReg, w_memWrite, w_aluSrc, w_regWrite, w_jump;
+    wire [2:0] w_aluOp; // 3 bits para soportar todas las operaciones inmediatas
 
     // --- Cables de Datos y Registros ---
-    wire [4:0]  w_write_reg_addr; // Salida del Mux2 (Destino de escritura)
-    wire [31:0] w_write_data;     // Salida del Mux1 (Dato final a escribir)
+    wire [4:0]  w_write_reg_addr; // Salida del Mux2
+    wire [31:0] w_write_data;     // Salida del Mux1 (WB)
     wire [31:0] w_readData1;
     wire [31:0] w_readData2;
-    wire [31:0] w_signExtImm;     // Salida del signExtend
+    wire [31:0] w_signExtImm;     // Inmediato extendido
 
     // --- Cables de Ejecución (ALU) ---
     wire [31:0] w_aluInputB;      // Salida del Mux3
@@ -39,20 +46,46 @@ module DataPath(
     wire        w_zeroFlag;
 
     // --- Cables de Memoria ---
-    wire [31:0] w_memDataOut;     // Salida de la RAM
+    wire [31:0] w_memDataOut;     
 
     // --- Cables de Branch ---
-    wire [31:0] w_shiftedImm;     // Salida del shiftLeft2
-    wire [31:0] w_branchTarget;   // Dirección calculada del salto
-    wire        w_pcSrc;          // AND entre Branch y Zero
+    wire [31:0] w_shiftedImm;     
+    wire [31:0] w_branchTarget;   
+    wire        w_pcSrc;          
 
 
-    
+    // ==========================================
+    // 2. LÓGICA DE CÁLCULO DE DIRECCIONES
+    // ==========================================
+
+    // Cálculo de JUMP: Concatenar 4 bits superiores de PC+4, target y 00
+    assign w_jumpAddress = {w_pc_plus_4[31:28], target, 2'b00};
+
+    // Cálculo de BRANCH: PC+4 + (Inmediato * 4)
+    assign w_branchTarget = w_pc_plus_4 + w_shiftedImm;
+
+    // Decisión de BRANCH: (Branch activo AND Zero Flag activa)
+    assign w_pcSrc = w_branch & w_zeroFlag;
+
+
+    // ==========================================
+    // 3. INSTANCIACIÓN DE MÓDULOS
+    // ==========================================
+
+    // --- ETAPA 1: FETCH ---
+
+    // Mux5: Decide entre el flujo de Branch/Normal y un JUMP incondicional
+    Mux5 U_Mux_Jump (
+        .nextPcBranch(w_pc_next_branch), // Viene del Mux4
+        .jumpTarget(w_jumpAddress),
+        .jump(w_jump),                   // CORREGIDO: Usamos .jump en vez de .sel
+        .finalPC(w_pc_final)             // Va hacia la entrada del PC
+    );
 
     pc U_PC (
         .clk(clk),
         .reset(reset),
-        .pcNext(w_pc_next),      // Viene del Mux4
+        .pcNext(w_pc_final),             // <--- Conectado a la salida del Mux5
         .pc(w_pc_actual)
     );
 
@@ -75,14 +108,14 @@ module DataPath(
         .branch(w_branch),
         .memRead(w_memRead),
         .memtoReg(w_memtoReg),
-        .aluOp(w_aluOp),
+        .aluOp(w_aluOp),         // 3 bits
+        .jump(w_jump),           // Salida de Jump
         .memWrite(w_memWrite),
         .aluSrc(w_aluSrc),
         .regWrite(w_regWrite)
     );
 
-    // Mux2: Selecciona registro destino (rt vs rd)
-    // Entradas: rt_addr, rd_addr, regDst -> Salida: writeReg
+    // Mux2: Decide registro destino (rt vs rd)
     Mux2 U_Mux_RegDst (
         .rt_addr(rt),
         .rd_addr(rd),
@@ -95,7 +128,7 @@ module DataPath(
         .readReg1(rs),
         .readReg2(rt),
         .writeReg(w_write_reg_addr),
-        .writeData(w_write_data), // Viene del Mux1
+        .writeData(w_write_data), // Viene de WB
         .regWrite(w_regWrite),
         .readData1(w_readData1),
         .readData2(w_readData2)
@@ -109,8 +142,7 @@ module DataPath(
 
     // --- ETAPA 3: EXECUTE (ALU) ---
 
-    // Mux3: Selecciona entrada B de la ALU (Registro vs Inmediato)
-    // Entradas: readData2, signExtImm, aluSrc -> Salida: aluInputB
+    // Mux3: Decide operando B de la ALU (Registro vs Inmediato)
     Mux3 U_Mux_ALUSrc (
         .readData2(w_readData2),
         .signExtImm(w_signExtImm),
@@ -132,27 +164,19 @@ module DataPath(
         .zeroFlag(w_zeroFlag)
     );
 
-    // --- LÓGICA DE BRANCH ---
+    // --- LÓGICA DE BRANCH (Hardware Adicional) ---
     
-    // Shift Left 2
     shiftLeft2 U_Shift (
         .inData(w_signExtImm),
         .outData(w_shiftedImm)
     );
 
-    // Sumador simple para Branch
-    assign w_branchTarget = w_pc_plus_4 + w_shiftedImm;
-
-    // Compuerta AND para decidir el Branch
-    assign w_pcSrc = w_branch & w_zeroFlag;
-
-    // Mux4: Selecciona siguiente PC (PC+4 vs Branch Target)
-    // Entradas: pcPlus4, branchTarget, pcSrc -> Salida: nextPcBranch
+    // Mux4: Decide siguiente PC (PC+4 vs Branch Target)
     Mux4 U_Mux_Branch (
         .pcPlus4(w_pc_plus_4),
         .branchTarget(w_branchTarget),
-        .pcSrc(w_pcSrc),
-        .nextPcBranch(w_pc_next)
+        .pcSrc(w_pcSrc),                 // CORREGIDO: Usamos .pcSrc en vez de .sel
+        .nextPcBranch(w_pc_next_branch)  // Va hacia Mux5
     );
 
 
@@ -170,12 +194,11 @@ module DataPath(
 
     // --- ETAPA 5: WRITE BACK ---
 
-    // Mux1: Selecciona dato a escribir en registro (ALU vs Memoria)
-    // Entradas: aluResult, memData, memToReg -> Salida: writeData
+    // Mux1: Decide dato a escribir en registro (ALU Result vs Memoria)
     Mux1 U_Mux_MemToReg (
         .aluResult(w_aluResult),
         .memData(w_memDataOut),
-        .memToReg(w_memtoReg),
+        .memToReg(w_memtoReg),           // CORREGIDO: Usamos .memToReg en vez de .sel
         .writeData(w_write_data)
     );
 
