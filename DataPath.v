@@ -46,11 +46,7 @@ module DataPath(
     wire        w_zeroFlag;
 
     // --- Cables de Memoria ---
-<<<<<<< HEAD
     wire [31:0] w_memDataOut;     
-=======
-    wire [31:0] w_memDataOut;     // Salida de la RA
->>>>>>> 1b92a02 (efys)
 
     // --- Cables de Branch ---
     wire [31:0] w_shiftedImm;     
@@ -89,11 +85,7 @@ module DataPath(
     pc U_PC (
         .clk(clk),
         .reset(reset),
-<<<<<<< HEAD
         .pcNext(w_pc_final),             // <--- Conectado a la salida del Mux5
-=======
-        .pcNext(w_pc_next),     
->>>>>>> 1b92a02 (efys)
         .pc(w_pc_actual)
     );
 
@@ -255,6 +247,7 @@ module Testbench;
         
         // Paso B: Soltamos el reset
         reset = 0;
+        
         $display("Time: %0t -> Reset desactivado. Procesador arrancando...", $time);
 
         // Paso C: Ejecución
@@ -263,8 +256,6 @@ module Testbench;
         #200; 
 
         // Paso D: Finalizar
-        $display("=== FIN DE SIMULACION ===");
-        $finish;
     end
 
     // 5. Monitor de Señales (La "Consola")

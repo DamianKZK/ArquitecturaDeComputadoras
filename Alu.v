@@ -18,7 +18,10 @@ always @* begin
         
         default: out = 32'b0;
     endcase
-
-    zeroFlag = (out == 32'b0);
+    if(out == 32'b0) 
+        zeroFlag = 1'b1;
+    else begin
+        zeroFlag = 1'b0;
+    end
 end
 endmodule

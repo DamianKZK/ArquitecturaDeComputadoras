@@ -9,6 +9,7 @@ module RAM(
     
 
     reg[31:0] memory [0:255];
+    
     initial begin
         $readmemb("RAM.txt", memory); //Falta el archivo
     end

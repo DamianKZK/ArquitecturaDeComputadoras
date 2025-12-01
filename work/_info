@@ -10,49 +10,49 @@ z2
 cModel Technology
 d/home/anglonchas/Programming/Verilog
 v_and
-Z0 !s110 1764564773
+Z0 !s110 1764612028
 !i10b 1
 !s100 UTLD^e51d3b2_7a7Z9Z_j0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ik@FcaIHS`7Xok<`Od<aif3
+ITAW:`UL;D=?;?0_44iVg;0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 d/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras
+Z3 d/home/anglonchas/Programming/ArquitecturaDeComputadoras
 Z4 w1764528649
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/_and.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/_and.v
-!i122 68
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/_and.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/_and.v
+!i122 288
 L0 4 7
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1764564773.000000
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/_and.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/_and.v|
+Z6 !s108 1764612028.000000
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/_and.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/_and.v|
 !i113 1
 Z7 o-work work
 Z8 tCvgOpt 0
 n@_and
 vadder
-Z9 !s110 1764564774
+Z9 !s110 1764612029
 !i10b 1
 !s100 z:Tob45]23Kc<;hXd4P_S3
 R1
-I=>H;1KzYZB;eegCS>glcJ3
+IY8WzKOTgK>c>Tl:?fHg6V0
 R2
 R3
-Z10 w1764560664
-Z11 8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Quesadilla.v
-Z12 F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Quesadilla.v
-!i122 81
+Z10 w1764603553
+Z11 8/home/anglonchas/Programming/ArquitecturaDeComputadoras/Quesadilla.v
+Z12 F/home/anglonchas/Programming/ArquitecturaDeComputadoras/Quesadilla.v
+!i122 301
 L0 142 8
 R5
 r1
 !s85 0
 31
-Z13 !s108 1764564774.000000
-Z14 !s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Quesadilla.v|
-Z15 !s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Quesadilla.v|
+Z13 !s108 1764612029.000000
+Z14 !s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/Quesadilla.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/Quesadilla.v|
 !i113 1
 R7
 R8
@@ -61,13 +61,13 @@ R9
 !i10b 1
 !s100 Tgme0eneUff^b1bRHM@2n0
 R1
-IBYS36365eFoE:>^ZG;M`@2
+IQkLCaFWHC>o8hQ_h6jAOK0
 R2
 R3
 R10
 R11
 R12
-!i122 81
+!i122 301
 L0 33 19
 R5
 r1
@@ -81,25 +81,25 @@ R7
 R8
 n@a@l@u
 vAluControl
-R0
+R9
 !i10b 1
-!s100 9Nma?RmFjV3J]=<ljJ[nN3
+!s100 kCOIT81abfGz>mX[9@GDj0
 R1
-In;0DPaJCESUgFRM>?:d_o1
+IeI<1`d1kL?LG@WkYQ7BBL2
 R2
 R3
 R10
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/AluControl.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/AluControl.v
-!i122 71
-L0 3 29
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/AluControl.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/AluControl.v
+!i122 291
+L0 2 37
 R5
 r1
 !s85 0
 31
 R6
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/AluControl.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/AluControl.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/AluControl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/AluControl.v|
 !i113 1
 R7
 R8
@@ -109,13 +109,13 @@ R9
 !i10b 1
 !s100 ZOFddbQeKE1WGN4=BQjJ33
 R1
-IK_L6z3E@_^:VPBLe5iSiE3
+I5Am:QLm7n6BPl]@OBH?[>3
 R2
 R3
 R10
 R11
 R12
-!i122 81
+!i122 301
 L0 53 22
 R5
 r1
@@ -129,46 +129,46 @@ R7
 R8
 n@a@l@u@zero@flag
 vburrito
-R0
+R9
 !i10b 1
 !s100 DP_ided02Y1=B?Po5_Hz<3
 R1
-INPS>ncKhOBin4TkoDdId_1
+Ij5_4nY4QZm4lJAdDS2l270
 R2
 R3
 R4
-Z16 8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Burrito.v
-Z17 F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Burrito.v
-!i122 72
+Z16 8/home/anglonchas/Programming/ArquitecturaDeComputadoras/Burrito.v
+Z17 F/home/anglonchas/Programming/ArquitecturaDeComputadoras/Burrito.v
+!i122 292
 L0 59 25
 R5
 r1
 !s85 0
 31
-R6
-Z18 !s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Burrito.v|
-Z19 !s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Burrito.v|
+R13
+Z18 !s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/Burrito.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/Burrito.v|
 !i113 1
 R7
 R8
 vburritoTB
-R0
+R9
 !i10b 1
 !s100 B;V1B@HF@K0KlBlo_i@gz2
 R1
-INYJEfcHSgHA;2Y?=:V4_90
+I3We5F44B;M8]YhH?;:7e:3
 R2
 R3
 R4
 R16
 R17
-!i122 72
+!i122 292
 L0 85 57
 R5
 r1
 !s85 0
 31
-R6
+R13
 R18
 R19
 !i113 1
@@ -176,49 +176,49 @@ R7
 R8
 nburrito@t@b
 vControl
-R9
+Z20 !s110 1764612030
 !i10b 1
-!s100 ngUe[JTmUCh9eBBBAORUX0
+!s100 :6`NgH`Gg]4AiA54nCF5Y2
 R1
-I`F]JmBdd6OZ7ci7HjWj551
+I4]=_iFiW7k^9g?UhoNWc91
 R2
 R3
-R10
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/UnidadControl.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/UnidadControl.v
-!i122 86
-L0 1 59
+w1764611524
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/UnidadControl.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/UnidadControl.v
+!i122 306
+L0 2 99
 R5
 r1
 !s85 0
 31
-R13
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/UnidadControl.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/UnidadControl.v|
+Z21 !s108 1764612030.000000
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/UnidadControl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/UnidadControl.v|
 !i113 1
 R7
 R8
 n@control
 vDataPath
-R0
+R9
 !i10b 1
-!s100 i:;W]eXz^RR=ePgXSTa5_3
+!s100 1O?5f<OjAndAJZfYC2Ol>2
 R1
-IL;VNMJ20jH;n3:[hCC[K63
+Ili[@XVfLViD^IfTE65;4B1
 R2
 R3
-Z20 w1764564755
-Z21 8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v
-Z22 F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v
-!i122 73
-L0 3 179
+Z22 w1764611314
+Z23 8/home/anglonchas/Programming/ArquitecturaDeComputadoras/DataPath.v
+Z24 F/home/anglonchas/Programming/ArquitecturaDeComputadoras/DataPath.v
+!i122 293
+L0 3 202
 R5
 r1
 !s85 0
 31
-R6
-Z23 !s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v|
-Z24 !s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v|
+R13
+Z25 !s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/DataPath.v|
+Z26 !s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/DataPath.v|
 !i113 1
 R7
 R8
@@ -228,21 +228,21 @@ R9
 !i10b 1
 !s100 @Q`]1Eel80?0Y3b9CDQWY1
 R1
-IgTddo2O=B0AZaFB]l]bg90
+IRAZ`1?<K`e1z1VJZAgBG51
 R2
 R3
-w1764563247
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/InstructionMemory.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/InstructionMemory.v
-!i122 74
+R10
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/InstructionMemory.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/InstructionMemory.v
+!i122 294
 L0 1 16
 R5
 r1
 !s85 0
 31
-R6
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/InstructionMemory.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/InstructionMemory.v|
+R13
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/InstructionMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/InstructionMemory.v|
 !i113 1
 R7
 R8
@@ -252,13 +252,13 @@ R9
 !i10b 1
 !s100 >^mY4Y1c:U2[Qi4gMkR[h2
 R1
-IlFB0nDbkG7j;I]I;kE0NS0
+ILl?15gSi7g>ORN]XdgM[22
 R2
 R3
 R10
 R11
 R12
-!i122 81
+!i122 301
 L0 151 14
 R5
 r1
@@ -276,21 +276,21 @@ R0
 !i10b 1
 !s100 `d=DGNKiOLk1>fZd@aWM91
 R1
-INcF>ZMh8e8R1mzY>EBG<61
+I;dX@PGHfgcXdO@YJ]IZX40
 R2
 R3
-R10
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux1.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux1.v
-!i122 67
-Z25 L0 1 8
+Z27 w1764560664
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux1.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux1.v
+!i122 287
+Z28 L0 1 8
 R5
 r1
 !s85 0
 31
 R6
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux1.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux1.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux1.v|
 !i113 1
 R7
 R8
@@ -300,21 +300,21 @@ R9
 !i10b 1
 !s100 eZ328`b<Y`g38?4oeOOD53
 R1
-IO9T9W8l1<2fHjg^W`AGBC2
+I]Mf[^G;[DP`bNGAECKdQI1
 R2
 R3
 w1764563978
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux2.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux2.v
-!i122 76
-R25
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux2.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux2.v
+!i122 296
+R28
 R5
 r1
 !s85 0
 31
 R13
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux2.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux2.v|
 !i113 1
 R7
 R8
@@ -324,21 +324,21 @@ R9
 !i10b 1
 !s100 48Oe=777:b07HSo?Y[<hN0
 R1
-IcHQQ@JXVIS]B80@^PVKlG2
+IA?MaK@_=@X[V5HGY0FRUz1
 R2
 R3
-R10
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux3.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux3.v
-!i122 77
-R25
+R27
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux3.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux3.v
+!i122 297
+R28
 R5
 r1
 !s85 0
 31
 R13
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux3.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux3.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux3.v|
 !i113 1
 R7
 R8
@@ -348,21 +348,21 @@ R9
 !i10b 1
 !s100 9mg6VDRL[c:PPDezYnH]00
 R1
-I^X2?EMH8_CY5LfW48B[o_2
+IA_?^7>4O^DjG0MIQ:Fz_I3
 R2
 R3
-R10
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux4.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux4.v
-!i122 78
-R25
+Z29 w1764605385
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux4.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux4.v
+!i122 298
+R28
 R5
 r1
 !s85 0
 31
 R13
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux4.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux4.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux4.v|
 !i113 1
 R7
 R8
@@ -372,21 +372,21 @@ R9
 !i10b 1
 !s100 TW790o[2LiTK3LEld=0Nn3
 R1
-INUl^n^4G5f5XB@c8h>9D^0
+I01[mPeW1OoMg9SRSJFWEG0
 R2
 R3
-R10
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux5.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux5.v
-!i122 79
-R25
+R27
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux5.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux5.v
+!i122 299
+R28
 R5
 r1
 !s85 0
 31
 R13
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux5.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/Mux5.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/Mux5.v|
 !i113 1
 R7
 R8
@@ -396,21 +396,21 @@ R9
 !i10b 1
 !s100 k<i]R<QbmmhQ]kB5=nUeV1
 R1
-ISR[7ce_=Wk1O[MW]8fWK30
+Im1_VWEf1QYRJLgKZ@L]XV1
 R2
 R3
-w1764561701
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/pc.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/pc.v
-!i122 80
+R10
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/pc.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/pc.v
+!i122 300
 L0 3 22
 R5
 r1
 !s85 0
 31
 R13
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/pc.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/pc.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/pc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/pc.v|
 !i113 1
 R7
 R8
@@ -419,21 +419,21 @@ R0
 !i10b 1
 !s100 :ezRJNR3?L]6cf>eQTXV=0
 R1
-I8hlmWK8APoA_0]n<bJ1;^1
+IQPM56EePDzlnlCXUA1f:o0
 R2
 R3
-R10
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/adder.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/adder.v
-!i122 69
-Z26 L0 1 6
+R29
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/adder.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/adder.v
+!i122 289
+Z30 L0 1 6
 R5
 r1
 !s85 0
 31
 R6
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/adder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/adder.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/adder.v|
 !i113 1
 R7
 R8
@@ -443,13 +443,13 @@ R9
 !i10b 1
 !s100 5OX=FHn=1eR<OTWS3ZdSa1
 R1
-I^K5Ji541<5LL7AB7o6G]60
+II_VobgB0<YYMk=0JM0ceJ0
 R2
 R3
 R10
 R11
 R12
-!i122 81
+!i122 301
 L0 3 13
 R5
 r1
@@ -467,13 +467,13 @@ R9
 !i10b 1
 !s100 G3k_<mzhMBVEJVWcA8SIJ2
 R1
-I6U3UbMk7GDgfCQ>SBi33Z1
+ISz]>WeDj2ALdI=4@7Q3;E0
 R2
 R3
 R10
 R11
 R12
-!i122 81
+!i122 301
 L0 166 24
 R5
 r1
@@ -490,13 +490,13 @@ R9
 !i10b 1
 !s100 6];b7R4d6ZHdIzlEMkeN51
 R1
-IbRI7QZT^Z:mVE@dg7kI_Z3
+IS]8jCn9FH^FQGM=K]=7[91
 R2
 R3
 R10
 R11
 R12
-!i122 81
+!i122 301
 L0 192 16
 R5
 r1
@@ -514,13 +514,13 @@ R9
 !i10b 1
 !s100 VR5nQo[=Q]IKS^eG6Sdj43
 R1
-I]6d=9iEM;O^R;RO>G=9>41
+IShlHB6QS8LeVbd``?LW7n1
 R2
 R3
 R10
 R11
 R12
-!i122 81
+!i122 301
 L0 76 20
 R5
 r1
@@ -538,93 +538,116 @@ R9
 !i10b 1
 !s100 TaX2]Il]6m88Ncc2H;I7o1
 R1
-I;h;P5J<Y:>aHG^dPjlMW22
+I?Lo[CcH?AhWYA;@C5iI[z2
 R2
 R3
-w1764561991
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v
-!i122 82
+w1764611951
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/RegisterBank.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/RegisterBank.v
+!i122 302
 L0 1 31
 R5
 r1
 !s85 0
 31
 R13
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/RegisterBank.v|
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/RegisterBank.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/RegisterBank.v|
 !i113 1
 R7
 R8
 nregister@bank
 vshiftLeft2
-R9
+R20
 !i10b 1
 !s100 FIleSBI2<9DNTd`2=3UWL2
 R1
-IMfcNJ9Gei;0FDToCVb>CT0
+IPHoocY94mmEJ;<>4bmPWL2
 R2
 R3
-R10
-8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/ShiftLeft2.v
-F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/ShiftLeft2.v
-!i122 84
-R26
+R27
+8/home/anglonchas/Programming/ArquitecturaDeComputadoras/ShiftLeft2.v
+F/home/anglonchas/Programming/ArquitecturaDeComputadoras/ShiftLeft2.v
+!i122 304
+R30
 R5
 r1
 !s85 0
 31
-R13
-!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/ShiftLeft2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/ShiftLeft2.v|
+R21
+!s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/ShiftLeft2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/ShiftLeft2.v|
 !i113 1
 R7
 R8
 nshift@left2
 vsignExtend
-R9
+R20
 !i10b 1
 !s100 PQ5m=PVW;z1k^CEdN@=cB0
 R1
-IY6BLF8C31WPjh<W8;H`9L0
+IGR0gJheDMA^3?A0[i``OA2
 R2
 R3
-Z27 w1764560774
-Z28 8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/signExtend.v
-Z29 F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/signExtend.v
-!i122 85
+R10
+Z31 8/home/anglonchas/Programming/ArquitecturaDeComputadoras/signExtend.v
+Z32 F/home/anglonchas/Programming/ArquitecturaDeComputadoras/signExtend.v
+!i122 305
 L0 3 7
 R5
 r1
 !s85 0
 31
-R13
-Z30 !s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/signExtend.v|
-Z31 !s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/signExtend.v|
+R21
+Z33 !s107 /home/anglonchas/Programming/ArquitecturaDeComputadoras/signExtend.v|
+Z34 !s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/ArquitecturaDeComputadoras/signExtend.v|
 !i113 1
 R7
 R8
 nsign@extend
 vsigntb
-R9
+R20
 !i10b 1
 !s100 cJi:D@9QDd69Tz:3dPLUG3
 R1
-IhdKnzQRE47K6I>IVzEzjk1
+I3z8aK@IGD8i[Ig4:dXzQ@3
 R2
 R3
-R27
-R28
-R29
-!i122 85
+R10
+R31
+R32
+!i122 305
 L0 12 11
 R5
 r1
 !s85 0
 31
+R21
+R33
+R34
+!i113 1
+R7
+R8
+vtest
+R9
+!i10b 1
+!s100 3@_zZLf9^nn5ilTDnlc?A2
+R1
+Im@XG3mhm5kWKBI54_[k5_3
+R2
+R3
+R22
+R23
+R24
+!i122 293
+L0 207 8
+R5
+r1
+!s85 0
+31
 R13
-R30
-R31
+R25
+R26
 !i113 1
 R7
 R8
@@ -635,10 +658,10 @@ vtestbench
 R1
 IOB3I8PjBdAYLXJYaS=V0:2
 R2
-R3
+d/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras
 w1764563859
-R21
-R22
+8/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v
+F/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v
 !i122 43
 L0 184 10
 R5
@@ -646,31 +669,31 @@ r1
 !s85 0
 31
 !s108 1764563864.000000
-R23
-R24
+!s107 /home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/anglonchas/Programming/projectVerilog/ArquitecturaDeComputadoras/DataPath.v|
 !i113 1
 R7
 R8
 vTestbench
-R0
+R9
 !i10b 1
-!s100 JOT790OE4^iPQdo^O?:XY1
+!s100 O=0OM]lgJjHhBD_O3<TLh2
 R1
-I1VDRJo9M^UGiMKZReDg6X3
+IkE1Emjdo?[L=]2QK@cQ:M3
 R2
 R3
-R20
-R21
 R22
-!i122 73
-L0 184 62
+R23
+R24
+!i122 293
+L0 216 61
 R5
 r1
 !s85 0
 31
-R6
-R23
-R24
+R13
+R25
+R26
 !i113 1
 R7
 R8
