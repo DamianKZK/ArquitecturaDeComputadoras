@@ -11,7 +11,7 @@ module registerBank(
     
 
 	reg[31:0] Bank[0:31];
-
+    
 	initial begin
 		$readmemb("data.txt", Bank);
 	end

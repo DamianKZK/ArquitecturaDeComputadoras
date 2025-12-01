@@ -7,17 +7,12 @@ module pc(
 	output reg [31:0] pc //este va a la memoria y al sumador
 	);
 
+    initial begin 
+        counterOut = 32'b0;
+    end
 
-always @(posedge clk) begin
-	if(reset)
-		pc <=32'b0;
-	else begin
-		pc<=pcNext;
-	end
+    always @(clk) begin
+        counterOut = counterIn + 4;
+    end
 
-	
-end
-
-
-
-endmodule 
+endmodule
