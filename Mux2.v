@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module Mux2(
     input [4:0] rt_addr,  
     input [4:0] rd_addr,  
@@ -5,4 +6,5 @@ module Mux2(
     output [4:0] writeReg  
 );
     assign writeReg = (regDst) ? rd_addr : rt_addr;
+
 endmodule
