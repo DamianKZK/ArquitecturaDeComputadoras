@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module Mux4(
     input [31:0] pcPlus4,      // Entrada 0
     input [31:0] branchTarget, // Entrada 1 (Direccion calculada del salto)
@@ -5,4 +6,5 @@ module Mux4(
     output [31:0] nextPcBranch // Salida hacia el Mux5
 );
     assign nextPcBranch = (pcSrc) ? branchTarget : pcPlus4;
+
 endmodule
