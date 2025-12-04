@@ -1,3 +1,5 @@
+`timescale 1ns/1ns
+
 module registerBank(
     input clk,                 
     input [4:0] readReg1, 
@@ -27,5 +29,6 @@ module registerBank(
 		end
 
 	end
+
 
 endmodule
